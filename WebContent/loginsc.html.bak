@@ -1,0 +1,37 @@
+<script language=JavaScript>
+function check()
+{
+	if(document.form1.uname1.value=="")
+		alert("Enter Valid UserName");	
+	
+	else
+	if(document.form1.pwd1.value=="")
+		alert("Enter Valid Password");
+	else
+	{
+		form1.method="post";
+		form1.action="Serv_SignUp";
+	}
+}
+</script>
+<html>
+<head><title>Intranet Mailing System</title>
+<meta name="Microsoft Theme" content="copy-of-industrial 011">
+</head>
+<body leftmargin=0 Topmargin=0 background="indtextb.jpg" bgcolor="#FFFFFF" text="#BC5461" link="#BC54FF" vlink="#FF54FF" alink="#FF5400">
+<center>
+<form name=form1>
+<img border="0" src="Images%20Raj/IMS.jpg" width="792" height="77">
+<br><br><p>
+<img src="BURSTANI.gif" width="806" height="21">
+</p>
+<p>&nbsp;</p>
+<table width="246">
+<tr><td width="82"><font size="2" color="#000080"><b><font face="Verdana">User Name</font></b>&nbsp;</font></td><td width="150"><input type=text name=uname1></td></tr>
+<tr><td width="82"><b><font face="Verdana" size="2" color="#000080">Password</font></b></td><td width="150"><input type=password name=pwd1> </td></tr>
+</table>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=image src=login.gif height=25 width=91  value="Login" onclick=check()>
+<h2><b><sup><sup><sup><font color=red><img src=new.gif > </font></sup></sup></sup><font color="#000080" size="5"><sup><sup><sup><font face="Verdana">User</font>?&nbsp;</sup></sup></sup></font><sup><sup><sup><font color="#000080" size="6">&nbsp;</font></sup></sup></sup><font color="#000080"><sup><sup><sup>
+</sup></sup></sup></font></b><font color=red><a href="signmeup.html"><img src=sign.gif height=54 width=69 border=0></a></form></font></center></body></html>

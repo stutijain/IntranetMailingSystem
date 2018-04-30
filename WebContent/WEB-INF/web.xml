@@ -1,0 +1,422 @@
+<web-app>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  
+   <listener>
+    <listener-class>listener.MyContextListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>permit</param-name>
+    <param-value>no</param-value>
+  </context-param>
+ 
+<servlet>
+	 <servlet-name>Serv_SignMeUp</servlet-name>
+	 <servlet-class>Serv_SignMeUp</servlet-class>
+ </servlet>
+
+
+
+<servlet-mapping>
+	<servlet-name>Serv_SignMeUp</servlet-name>
+	<url-pattern>/Serv_SignMeUp</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Chat</servlet-name>
+	 <servlet-class>Serv_Chat</servlet-class>
+ </servlet>
+
+<servlet-mapping>
+	<servlet-name>Serv_Chat</servlet-name>
+	<url-pattern>/Serv_Chat</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_C</servlet-name>
+	 <servlet-class>Serv_C</servlet-class>
+ </servlet>
+
+<servlet-mapping>
+	<servlet-name>Serv_C</servlet-name>
+	<url-pattern>/Serv_C</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>Serv_C1</servlet-name>
+	 <servlet-class>Serv_C1</servlet-class>
+ </servlet>
+
+<servlet-mapping>
+	<servlet-name>Serv_C1</servlet-name>
+	<url-pattern>/Serv_C1</url-pattern>
+</servlet-mapping>
+
+
+
+<listener>
+	<description>sessionListener</description>
+	<listener-class>Serv_Chat2</listener-class>
+</listener>
+
+<servlet>
+	 <servlet-name>Serv_Chat2</servlet-name>
+	 <servlet-class>Serv_Chat2</servlet-class>
+ </servlet>
+
+<servlet-mapping>
+	<servlet-name>Serv_Chat2</servlet-name>
+	<url-pattern>/Serv_Chat2</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_SignUp</servlet-name>
+	 <servlet-class>Serv_SignUp</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_SignUp</servlet-name>
+	<url-pattern>/Serv_SignUp</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_List</servlet-name>
+	 <servlet-class>Serv_List</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_List</servlet-name>
+	<url-pattern>/Serv_List</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Inbox</servlet-name>
+	 <servlet-class>Serv_Inbox</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Inbox</servlet-name>
+	<url-pattern>/Serv_Inbox</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Inbox1</servlet-name>
+	 <servlet-class>Serv_Inbox1</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Inbox1</servlet-name>
+	<url-pattern>/Serv_Inbox1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Compose</servlet-name>
+	 <servlet-class>Serv_Compose</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Compose</servlet-name>
+	<url-pattern>/Serv_Compose</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Compose1</servlet-name>
+	 <servlet-class>Serv_Compose1</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Compose1</servlet-name>
+	<url-pattern>/Serv_Compose1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Option</servlet-name>
+	 <servlet-class>Serv_Option</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Option</servlet-name>
+	<url-pattern>/Serv_Option</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Address</servlet-name>
+	 <servlet-class>Serv_Address</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Address</servlet-name>
+	<url-pattern>/Serv_Address</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Send</servlet-name>
+	 <servlet-class>Serv_Send</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Send</servlet-name>
+	<url-pattern>/Serv_Send</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Folder</servlet-name>
+	 <servlet-class>Serv_Folder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Folder</servlet-name>
+	<url-pattern>/Serv_Folder</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Folder1</servlet-name>
+	 <servlet-class>Serv_Folder1</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Folder1</servlet-name>
+	<url-pattern>/Serv_Folder1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_SentMessages</servlet-name>
+	 <servlet-class>Serv_SentMessages</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_SentMessages</servlet-name>
+	<url-pattern>/Serv_SentMessages</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>Serv_Logout</servlet-name>
+	 <servlet-class>Serv_Logout</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Logout</servlet-name>
+	<url-pattern>/Serv_Logout</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>description</servlet-name>
+	 <servlet-class>description</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>description</servlet-name>
+	<url-pattern>/description</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_SeeMessage1</servlet-name>
+	 <servlet-class>Serv_SeeMessage1</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_SeeMessage1</servlet-name>
+	<url-pattern>/Serv_SeeMessage1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_SeeMessage</servlet-name>
+	 <servlet-class>Serv_SeeMessage</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_SeeMessage</servlet-name>
+	<url-pattern>/Serv_SeeMessage</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_FolderMessage</servlet-name>
+	 <servlet-class>Serv_FolderMessage</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_FolderMessage</servlet-name>
+	<url-pattern>/Serv_FolderMessage</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>Serv_NewFolder</servlet-name>
+	 <servlet-class>Serv_NewFolder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_NewFolder</servlet-name>
+	<url-pattern>/Serv_NewFolder</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>Serv_NewAddress</servlet-name>
+	 <servlet-class>Serv_NewAddress</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_NewAddress</servlet-name>
+	<url-pattern>/Serv_NewAddress</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>Serv_MoveMessage</servlet-name>
+	 <servlet-class>Serv_MoveMessage</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_MoveMessage</servlet-name>
+	<url-pattern>/Serv_MoveMessage</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_ModifyFolder</servlet-name>
+	 <servlet-class>Serv_ModifyFolder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_ModifyFolder</servlet-name>
+	<url-pattern>/Serv_ModifyFolder</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_ModifyAddress</servlet-name>
+	 <servlet-class>Serv_ModifyAddress</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_ModifyAddress</servlet-name>
+	<url-pattern>/Serv_ModifyAddress</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>Serv_Enter</servlet-name>
+	 <servlet-class>Serv_Enter</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Enter</servlet-name>
+	<url-pattern>/Serv_Enter</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_EditAddress</servlet-name>
+	 <servlet-class>Serv_EditAddress</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_EditAddress</servlet-name>
+	<url-pattern>/Serv_EditAddress</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_EditFolder</servlet-name>
+	 <servlet-class>Serv_EditFolder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_EditFolder</servlet-name>
+	<url-pattern>/Serv_EditFolder</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>Serv_DeleteMessage</servlet-name>
+	 <servlet-class>Serv_DeleteMessage</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_DeleteMessage</servlet-name>
+	<url-pattern>/Serv_DeleteMessage</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_DeleteFolder</servlet-name>
+	 <servlet-class>Serv_DeleteFolder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_DeleteFolder</servlet-name>
+	<url-pattern>/Serv_DeleteFolder</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>Serv_DeleteCkd</servlet-name>
+	 <servlet-class>Serv_DeleteCkd</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_DeleteCkd</servlet-name>
+	<url-pattern>/Serv_DeleteCkd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_DeleteCkd1</servlet-name>
+	 <servlet-class>Serv_DeleteCkd1</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_DeleteCkd1</servlet-name>
+	<url-pattern>/Serv_DeleteCkd1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_DeleteAddress</servlet-name>
+	 <servlet-class>Serv_DeleteAddress</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_DeleteAddress</servlet-name>
+	<url-pattern>/Serv_DeleteAddress</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_ChangePwd</servlet-name>
+	 <servlet-class>Serv_ChangePwd</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_ChangePwd</servlet-name>
+	<url-pattern>/Serv_ChangePwd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_AddFolder</servlet-name>
+	 <servlet-class>Serv_AddFolder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_AddFolder</servlet-name>
+	<url-pattern>/Serv_AddFolder</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_MoveFolder</servlet-name>
+	 <servlet-class>Serv_MoveFolder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_MoveFolder</servlet-name>
+	<url-pattern>/Serv_MoveFolder</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Show_Folder</servlet-name>
+	 <servlet-class>Serv_Show_Folder</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Show_Folder</servlet-name>
+	<url-pattern>/Serv_Show_Folder</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_Show_Folder1</servlet-name>
+	 <servlet-class>Serv_Show_Folder1</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Show_Folder1</servlet-name>
+	<url-pattern>/Serv_Show_Folder1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>Serv_AddAddress</servlet-name>
+	 <servlet-class>Serv_AddAddress</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_AddAddress</servlet-name>
+	<url-pattern>/Serv_AddAddress</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>getLocalIP</servlet-name>
+	 <servlet-class>getLocalIP</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>getLocalIP</servlet-name>
+	<url-pattern>/getLocalIP</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	 <servlet-name>Serv_Download</servlet-name>
+	 <servlet-class>Serv_Download</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Download</servlet-name>
+	<url-pattern>/Serv_Download</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>Serv_Att</servlet-name>
+	 <servlet-class>Serv_Att</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>Serv_Att</servlet-name>
+	<url-pattern>/Serv_Att</url-pattern>
+</servlet-mapping>
+  
+</web-app>
